@@ -921,7 +921,7 @@ namespace OfficeOpenXml
 				if (ssi.isRichText)
 				{
                     cache.Append("<si>");
-                    ConvertUtil.ExcelEncodeString(cache, t);
+                    ConvertUtil.ExcelEncodeString(cache, ConvertUtil.ExcelEscapeString(t));
                     cache.Append("</si>");
 				}
 				else
